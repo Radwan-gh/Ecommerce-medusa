@@ -29,6 +29,10 @@
     "turbo": "^2.0.14",
     "ajv": "^8.13.0"
   },
+  "dependencies": {
+    "react": "19.0.5",
+    "react-dom": "19.0.5"
+  },
   "workspaces": [
     "apps/**",
     "!apps/backend/.medusa/**"
@@ -39,6 +43,12 @@
     },
     "@eslint/eslintrc": {
       "ajv": "^6.12.4"
+    },
+    "@dtc/storefront": {
+      "@medusajs/ui": {
+        "react": "$react",
+        "react-dom": "$react-dom"
+      }
     }
   }
 }
