@@ -30,8 +30,8 @@
     "turbo": "^2.0.14"
   },
   "dependencies": {
-    "react": "19.0.5",
-    "react-dom": "19.0.5"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "workspaces": [
     "apps/**",
@@ -45,9 +45,19 @@
       "ajv": "^6.12.4"
     },
     "@dtc/storefront": {
+      "next": {
+        "react": "19.0.5",
+        "react-dom": "19.0.5"
+      },
       "@medusajs/ui": {
-        "react": "$react",
-        "react-dom": "$react-dom"
+        "react": "19.0.5",
+        "react-dom": "19.0.5"
+      },
+      "@medusajs/icons": {
+        "react": "19.0.5"
+      },
+      "@medusajs/ui-preset": {
+        "react": "19.0.5"
       }
     }
   }
