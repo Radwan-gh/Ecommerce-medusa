@@ -3,6 +3,7 @@ WORKDIR /app
 RUN apk add --no-cache python3 make g++
 COPY package.json package-lock.json turbo.json ./
 COPY apps/backend/package.json apps/backend/package.json
+COPY apps/storefront/package.json apps/storefront/package.json
 RUN npm ci
 COPY . .
 RUN npx turbo build --filter=@dtc/backend
